@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUP | Quezon City</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/Logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="material-icons" onclick="hideMenu()">cancel</i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT</a></li>
+            <li><a href="Courses.html">PROGRAMS</a></li>
+            <li><a href="MissionVision.html">MISSION & VISION</a></li>
+            <li><a href="Contact us.html">CONTACT US</a></li>
+            <li><a href="https://jerlerace.github.io/LoginPage">Log Out</a></li>
+          </ul>
+        </div>
+        <i class="material-icons" onclick="showMenu()">dehaze</i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- ABOUT US CONTENT -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the Country's 1st PolytechnicU</h1>
+          <p>
+            The PUP Quezon City Campus, formerly PUP Commonwealth Campus, is a
+            1.9-hectare forested land area and was assigned, transferred and
+            endorsed to the Polytechnic University of the Philippines as
+            ASSIGNEE by the Housing and Urban Development Coordinating
+            Council-National Government Center Housing Committee (HUDCC-NGCHC),
+            a government entity created by Executive Order No. 90 and with
+            expanded functions under RA 7279 and Home Insurance And Guaranty
+            Corporation (HIGC) as Assignor, a government owned and controlled
+            corporation created under RA 580 and presently located at Don Fabian
+            Street, Barangay Commonwealth, Quezon City.
+            <br /><br />
+            Started as petitions to have a higher educational institution for
+            the youth at the National Government Center area from the community
+            organizations and church groups, namely; Parokya ng Mabuting Pastol
+            , Kaagapay sa Makatarungan at Pantay na Paninirahan, Inc. ,
+            SUPERBLOCKS, and Kristong Hari Foundation, and negotiations with
+            local officials and other government agencies, the PUP Quezon City
+            is a pantheon of concrete success towards the struggle in people’s
+            fight against ignorance. The campus will continue its passion and
+            commitment to
+            <strong
+              >“provide quality education to the urban poor communities of
+              Quezon City and its neighboring localities.”</strong
+            >
+          </p>
+          <a href="Courses.html" class="know-more-button maroon-btn"
+            >Explore Now</a
+          >
+        </div>
+        <div class="about-col"><img src="images/about.jpeg" /></div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        The PUP Quezon City Campus, formerly PUP Commonwealth Campus, is a
+        1.9-hectare forested land area<br />
+        and was assigned, transferred and endorsed to the Polytechnic University
+        of the Philippines<br />
+        as ASSIGNEE by the Housing and Urban Development Coordinating
+        Council-National Government Center Housing Committee<br />
+        (HUDCC-NGCHC).
+      </p>
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/ThePUPQCCampusOfficial"
+          target="_blank"
+        >
+          <i class="material-icons">thumb_up</i></a
+        >
+      </div>
+    </section>
+
+    <!-- ------Java script for toggle menu------ -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- ------Java script for Facilities image slider------ -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "2",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

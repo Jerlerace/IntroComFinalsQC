@@ -1,0 +1,493 @@
+/* IMAGE SOURCES: https://www.facebook.com/ThePUPQCCampusOfficial/photos and 
+    https://www.pup.edu.ph/quezoncity */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+  }
+  .header{
+   min-height: 100vh;
+   min-width: 100%;
+   background-image: linear-gradient(rgba(166, 0, 0, 0.7),rgb(13, 0, 0)), url(images/mainbanner.jpeg);
+   background-size: cover;
+   background-position: 0% 36%;
+   position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+    height: 50px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff700;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+  .know-more-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .know-more-button:hover{
+    border: 1px solid #701300;
+    background: #941900;
+    transition: 0.5s;
+  }
+  .know-more-button::after{
+  content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .know-more-button:hover::after{
+    width: 100%;
+    color: #fff;
+  }
+ nav .material-icons{
+    display: none;
+  }
+  @media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+  }
+    .nav-links ul li{
+     display: block;
+  }
+  .nav-links{
+    position: fixed;
+    background: #6f0700;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav .material-icons{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+    
+  }
+  }
+
+/* ------ Course ------ */
+.section-toggle {
+    margin: 50px auto 100px;
+    max-width: 1000px;
+    
+}
+.toggle-container {
+    background-color: beige;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.toggle-label {
+    cursor: pointer;
+    display: block;
+    background-image: linear-gradient(rgba(166, 0, 0, 0.7),rgb(13, 0, 0));
+    position: relative;
+    font-size: 22px;
+    margin: 0;
+    padding: 15px 20px;
+    color: white;
+    border-bottom: 1px solid #310000;
+    &::after {
+        content: "\271B";
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        opacity: 0.6;
+        transform: translateY(-50%);
+        font-weight: 100;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+}
+input[type="checkbox"]:checked + .toggle-label::after {
+    content: "\268A";
+    transform: translateY(-50%) rotate(180deg);
+}
+.toggle-text {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: all 0.8s ease;
+    * {
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+}
+.progs {
+    display:none;
+    &:checked + label + div {
+        max-height: 100vh;
+        visibility: visible;
+        opacity: 1;
+        padding: 20px;
+        * {
+            opacity: 1;
+        }
+    }
+    &:checked + label::after {
+        content: "\268A";
+    }
+}
+.toggle-head {
+    font-size: 24px;
+    font-weight: 700;
+    color: #800000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.toggle-body {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+@media(max-width: 700px){
+    
+}
+
+
+/* ------ Facilities ------ */
+.Facilities{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Facilities h1{
+    margin-bottom: 50px;
+}
+.Facilities{
+    padding: 0;
+}
+.swiper {
+    width: 1000px;
+    height: 700px;
+    
+
+  }
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100vh;
+    height: 100vh;
+    filter: blur(10px);
+    
+  }
+.swiper-slide-active{
+    filter: blur(0px);
+}
+  .swiper-slide img {
+    display: inline-block;
+    width: 91%;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+@media(max-width: 700px){
+    .swiper-slide h3{
+        font-size: 13px;
+    }
+    .swiper-slide p{
+        font-size: 10px;
+    }
+}
+
+
+  
+ 
+  
+
+
+/* ------CONTACT US------ */
+.contact {
+   margin: 100px auto;
+   width: 80%;
+   padding: 140px 0;
+   background-image: linear-gradient(rgba(166, 0, 0, 0.0),rgb(39, 0, 0)), url(images/PUP.png);
+   background-size: cover;
+   background-position: 0% 20%;
+   border-radius: 10px;
+   text-align: center;
+}
+.contact h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .contact h1{
+        font-size: 24px;
+    }
+    .contact{
+        background-position: 50% 50%;
+    }
+}
+/* ------ Footer ------ */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(rgba(166, 0, 0, 0.7),rgb(39, 0, 0));
+    color: white;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+}
+.footer p{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+.icons .material-icons{
+    color: rgb(255, 0, 0);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.thumb_up {
+    color: rgb(42, 117, 255);
+}
+
+/* ------ About Us Page ------ */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(166, 0, 0, 0.7),rgb(23, 0, 0)),url(images/aboutusbg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 100%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: beige;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100% ;
+    background-position: center;
+    border-radius: 27px;
+}
+.about-col h1{
+    padding-top: 0;
+    padding: 15px 30px 25px;
+}
+.about-col p{
+    padding: 15px 30px 25px;
+    padding-right: 0x ;
+    font-size: 14px;
+    text-justify: inter-word;
+    color: black;
+}
+.maroon-btn{
+    border: 1px solid rgb(166,0,0);
+    background: transparent;
+    color: black;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.maroon-btn:hover{
+    color: rgb(255, 255, 255);
+}
+@media(max-width:700px){
+    .about-col p{
+        padding: 15px 30px 25px;
+        font-size: 13px;
+        text-justify: inter-word;
+        color: black;
+}
+}
+
+/* ------ Mission Vision ------*/
+.missionvision{
+        width: 100%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        background-color: beige;
+}
+.mission-col h1{
+    padding: 70px 40px 0px;
+    padding-top: 0;
+    color: rgb(158, 0, 0);
+}
+.mission-col p{
+    padding: 0 40px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-justify: inter-word;
+    color: rgb(106, 0, 0);   
+}
+.mission-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.mission-col img{
+    width: 100%;
+    border-radius: 30px;
+}
+@media(max-width:700px){
+    .mission-col p{
+        padding: 15px 0 25px;
+        font-size: 14px;
+        font-weight: 500;
+        text-justify: inter-word;
+        color: rgb(106, 0, 0);   
+}
+}
+
+/* ------ Contact us Page ------ */
+     /*Location*/
+.Contactuss{
+    background-color: beige;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+.contact-col div{
+    display:flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .material-icons{
+    font-size: 28px;
+    color: rgb(166, 0, 0);
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+    color: rgb(62, 0, 0);
+    font-weight: 300;
+   
+}
+.contact-col div h5{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(166, 0, 0);
+    font-weight: 400;
+}
+.contact-row input, .contact-row textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(166,0,0);
+    box-sizing: border-box;
+    background-color: beige;
+    background-position: right;
+}
+.textbox{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgb(166,0,0);
+    box-sizing: border-box;
+    background-color: beige;
+    background-position: right;
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUP | Quezon City</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/Logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="material-icons" onclick="hideMenu()">cancel</i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About us.html">ABOUT</a></li>
+            <li><a href="Courses.html">PROGRAMS</a></li>
+            <li><a href="MissionVision.html">MISSION & VISION</a></li>
+            <li><a href="Contact us.html">CONTACT US</a></li>
+            <li><a href="https://jerlerace.github.io/LoginPage">Log Out</a></li>
+          </ul>
+        </div>
+        <i class="material-icons" onclick="showMenu()">dehaze</i>
+      </nav>
+      <h1>Mission and Vision</h1>
+    </section>
+
+    <!-- Mission and Vision-->
+    <section class="missionvision">
+      <div class="row">
+        <div class="mission-col">
+          </p>
+          <h1>PUP Vision</h1>
+          <p>PUP: The National Polytechnic University</p>
+          <h1>PUP Mission</h1>
+          <p>
+            Ensuring inclusive and equitable quality education and promoting
+              lifelong learning opportunities through a re-engineered
+              polytechnic university by committing to:<br /><br />
+              -Provide democratized access to educational opportunities for the
+              holistic development of individuals with global perspective<br /><br />
+              -Offer industry-oriented curricula that produce highly-skilled
+              professionals with managerial and technical capabilities and a
+              strong sense of public service for nation building<br /><br />
+              -Embed a culture of research and innovation<br /><br />
+              -Continuously develop faculty and employees with the highest level
+              of professionalism<br />
+              <br />
+              -Engage public and private institutions and other stakeholders for
+              the attainment of social development goal -establish a strong
+              presence and impact in the international academic community</b
+            >
+          
+        </div>
+        <div class="mission-col"><img src="images/about.jpeg" /></div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        The PUP Quezon City Campus, formerly PUP Commonwealth Campus, is a
+        1.9-hectare forested land area<br />
+        and was assigned, transferred and endorsed to the Polytechnic University
+        of the Philippines<br />
+        as ASSIGNEE by the Housing and Urban Development Coordinating
+        Council-National Government Center Housing Committee<br />
+        (HUDCC-NGCHC).
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/ThePUPQCCampusOfficial" target="_blank">
+                    <i class="material-icons">thumb_up</i></a>
+      </div>
+    </section>
+
+    <!-- ------Java script for toggle menu------ -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <!-- ------Java script for Facilities image slider------ -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "2",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
+
